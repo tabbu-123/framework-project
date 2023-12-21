@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>remove employee</title>
+</head>
+<body>
+    
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          choose Employee To Be Removed
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="'dropdownMenuButton">
+            {% for emp in emps %}
+
+          <li><a class="dropdown-item" href="#">{{emp.first_name}}</a></li>
+          {% endfor %}
+          
+      </div>
+       
+</body>
+</html>
